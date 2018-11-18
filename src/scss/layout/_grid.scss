@@ -1,0 +1,10 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    &--flex-row-wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,29 @@
+// Type
+$sans-serif:  'Poppins', sans-serif;
+
+// Weight
+$normal: 400;
+$semibold: 600;
+$bold: 700;
+
+.headline-lg {
+    font-size: 3rem;
+    font-weight: $semibold;
+    line-height: 1.2em;
+}
+
+.headline-md {
+    font-weight: $bold;
+    font-size: 2rem;
+    line-height: 1.2em;
+}
+
+.headline-sm {
+    font-size: 1.5rem;
+    font-weight: $semibold; 
+}
+
+p {
+    font-size: 1rem;
+    font-weight: $normal;
+}

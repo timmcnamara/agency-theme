@@ -1,0 +1,11 @@
+// button hover mixin
+
+@mixin button($color) {
+    background-color: $color;
+    border-color: $color; 
+    color: $color-light;
+
+    &:hover {
+        background-color: lighten($color, 3%);
+    } 
+}
