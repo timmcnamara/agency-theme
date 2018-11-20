@@ -132,7 +132,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 26px; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+.--p-b-16 {
+  padding-bottom: 16px; }
+
+.--p-t-24 {
+  padding-top: 24px; }
 
 /* devanagari */
 @font-face {
@@ -268,6 +278,23 @@ p {
     background-color: #01c687;
     transition: 0.3s all ease; }
 
+.section__container-two-col {
+  display: flex;
+  flex-wrap: wrap; }
+  .section__container-two-col .col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .section__container-two-col .col-2 {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .section__container-two-col .col-2 img {
+      max-width: 100%; }
+
 footer {
   background-color: #01c687; }
   footer .container {
@@ -276,8 +303,11 @@ footer {
     align-items: center;
     width: 100%;
     margin: 0 auto; }
+  footer .__copyright {
+    padding-left: 15px; }
   footer .__social {
-    font-size: 36px; }
+    font-size: 36px;
+    padding-right: 15px; }
 
 .container {
   max-width: 1200px;

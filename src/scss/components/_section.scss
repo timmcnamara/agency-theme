@@ -1,7 +1,26 @@
 .section {
-    &__container {
+    &__container-two-col {
         display: flex;
         flex-wrap: wrap;
+
+        .col-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .col-2 {
+            flex: 1;
+            padding-left: 15px;
+            padding-right: 15px;
+            img {
+                max-width: 100%;
+            }
+             
+        }
     }
 
 

@@ -1,3 +1,16 @@
 body {
     font-size: 16px;
+    line-height: 26px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.--p-b-16 {
+    padding-bottom: 16px;
+}
+
+.--p-t-24 {
+    padding-top: 24px;
 }
