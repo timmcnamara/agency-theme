@@ -1,0 +1,36 @@
+.__navbar {
+    background-color: $color-bg;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+        display: inline;
+        padding-left: 20px;
+    }
+
+    ul {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    &-container {
+        display: flex;
+        padding: 10px;
+        min-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-links {
+        display: flex;
+        list-style-type: none;
+        padding-right: 20px;
+    }
+
+    &-item {
+        margin-left: 30px;
+    }
+    
+}

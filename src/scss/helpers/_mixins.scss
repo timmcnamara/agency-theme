@@ -4,6 +4,7 @@
     background-color: $color;
     border-color: $color; 
     color: $color-light;
+    width: auto;
 
     &:hover {
         background-color: lighten($color, 3%);
