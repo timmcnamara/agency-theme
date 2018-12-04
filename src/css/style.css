@@ -499,9 +499,7 @@ p {
 
 .__navbar {
   background-color: #defcf5;
-  height: 80px;
-  display: flex;
-  flex-direction: row; }
+  height: 80px; }
   .__navbar img {
     display: inline;
     padding-left: 20px; }
@@ -510,9 +508,7 @@ p {
     margin: 0; }
   .__navbar-container {
     display: flex;
-    padding: 10px;
-    min-width: 1200px;
-    margin: 0 auto;
+    padding: 10px 30px;
     justify-content: space-between;
     align-items: center; }
   .__navbar-links {
@@ -521,6 +517,14 @@ p {
     padding-right: 20px; }
   .__navbar-item {
     margin-left: 30px; }
+  .__navbar-toggle {
+    font-size: 40px;
+    display: none; }
+  @media (max-width: 768px) {
+    .__navbar-toggle {
+      display: inline-block; }
+    .__navbar-links {
+      display: none; } }
 
 footer {
   background-color: #01c687; }

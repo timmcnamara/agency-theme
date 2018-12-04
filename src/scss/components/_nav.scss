@@ -1,8 +1,6 @@
 .__navbar {
     background-color: $color-bg;
     height: 80px;
-    display: flex;
-    flex-direction: row;
 
     img {
         display: inline;
@@ -16,9 +14,7 @@
 
     &-container {
         display: flex;
-        padding: 10px;
-        min-width: 1200px;
-        margin: 0 auto;
+        padding: 10px 30px;
         justify-content: space-between;
         align-items: center;
     }
@@ -31,6 +27,25 @@
 
     &-item {
         margin-left: 30px;
+    }
+
+    &-toggle {
+        font-size: 40px;
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        &-toggle {
+            // position: absolute;
+            // top: 0;
+            // right: 0;
+            display: inline-block;
+        }
+        
+        &-links {
+            display: none;
+        }
+    
     }
     
 }
