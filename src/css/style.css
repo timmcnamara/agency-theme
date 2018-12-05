@@ -520,11 +520,15 @@ p {
   .__navbar-toggle {
     font-size: 40px;
     display: none; }
+  .__navbar #toggle {
+    display: none; }
   @media (max-width: 768px) {
     .__navbar-toggle {
       display: inline-block; }
     .__navbar-links {
-      display: none; } }
+      display: none; }
+    .__navbar #toggle:checked + .__navbar-links {
+      display: block; } }
 
 footer {
   background-color: #01c687; }
