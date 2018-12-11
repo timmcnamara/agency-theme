@@ -50,10 +50,12 @@
         </div>
       </div>
     </nav>
-    <section class="__hero">
-      <div class="container __hero-items">
-        <img src="assets/banner.png" alt="" />
-        <div>
+    <section class="__hero ">
+      <div class="container __hero-items">    
+        <div class="img-wrap">
+            <img src="assets/banner.png" alt="" />
+        </div> 
+        <div class="content-wrap">
           <h1>A good designer must rely on experience</h1>
           <p>
             To design is much more than simply to assemble, to order, or even to
@@ -63,6 +65,7 @@
           <div><a href="#" class="btn btn--primary">Subscribe</a></div>
         </div>
       </div>
+      
     </section>
     <!-- SERVICES -->
     <section class="__services">
@@ -506,7 +509,7 @@
         document.getElementById("side-menu").style.width = "250px";
         document.getElementById("close-cross").style.display = "inline-block";
         document.getElementById("hamburger").style.display = "none";
-        document.body.style.overflow = "hidden";
+        // document.body.style.overflow = "hidden";
       }
 
       function closeSlideMenu() {

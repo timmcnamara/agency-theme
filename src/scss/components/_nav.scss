@@ -1,6 +1,8 @@
 .__navbar {
   background-color: $color-bg;
   height: 80px;
+  position: sticky;
+  top: 0;
   img {
     display: inline;
     padding-left: 20px;
