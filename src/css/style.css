@@ -514,27 +514,46 @@ p {
   .__navbar-links {
     display: flex;
     list-style-type: none;
-    padding-right: 20px;
-    background-color: red; }
+    padding-right: 20px; }
   .__navbar-item {
     margin-left: 30px; }
-  .__navbar-toggle {
-    font-size: 40px;
+  .__navbar .open-slide {
     display: none; }
-  .__navbar #toggle {
-    display: none; }
-  @media (max-width: 768px) {
-    .__navbar-toggle {
-      display: inline-block; }
+  @media only screen and (max-width: 600px) {
     .__navbar-links {
       display: none; }
-    .__navbar #toggle:checked + .__navbar-links {
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 20;
-      z-index: 2;
-      height: 100vh; } }
+    .__navbar .open-slide {
+      display: inline-block; } }
+  .__navbar .side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s; }
+
+#close-cross {
+  display: none;
+  font-size: 40px;
+  color: #000;
+  text-decoration: none; }
+
+.__sidebar-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none; }
+  .__sidebar-links li {
+    padding: 10px; }
+    .__sidebar-links li a {
+      color: #01c687;
+      font-size: 2em;
+      font-weight: bold;
+      text-decoration: none; }
 
 footer {
   background-color: #01c687; }
