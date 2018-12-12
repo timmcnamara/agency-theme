@@ -50,7 +50,7 @@
         </div>
       </div>
     </nav>
-    <section class="__hero ">
+    <section class="__hero">
       <div class="container __hero-items">    
         <div class="img-wrap">
             <img src="assets/banner.png" alt="" />
@@ -506,10 +506,12 @@
     </footer>
     <script>
       function openSlideMenu() {
+        var rect = document.body.getBoundingClientRect();
+        console.log(rect.y)
         document.getElementById("side-menu").style.width = "250px";
         document.getElementById("close-cross").style.display = "inline-block";
         document.getElementById("hamburger").style.display = "none";
-        // document.body.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
       }
 
       function closeSlideMenu() {

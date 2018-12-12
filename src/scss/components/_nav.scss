@@ -1,77 +1,78 @@
 .__navbar {
-  background-color: $color-bg;
-  height: 80px;
-  position: sticky;
-  top: 0;
-  img {
-    display: inline;
-    padding-left: 20px;
-  }
-  ul {
-    padding-left: 0;
-    margin: 0;
-  }
-  &-container {
-    display: flex;
-    padding: 10px 30px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &-links {
-    display: flex;
-    list-style-type: none;
-    padding-right: 20px;
-  }
-  &-item {
-    margin-left: 30px;
-  }
-  .open-slide {
-    display: none;
-  }
-  @media only screen and (max-width: 600px) {
+    background-color: $color-bg;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    img {
+        display: inline;
+        padding-left: 20px;
+    }
+    ul {
+        padding-left: 0;
+        margin: 0;
+    }
+    &-container {
+        display: flex;
+        padding: 10px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
     &-links {
-      display: none;
+        display: flex;
+        list-style-type: none;
+        padding-right: 20px;
+    }
+    &-item {
+        margin-left: 30px;
     }
     .open-slide {
-      display: inline-block;
+        padding-top: 15px;
+        display: none;
     }
-  }
-  .side-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    opacity: 0.9;
-    overflow-x: hidden;
-    padding-top: 50px;
-    transition: 0.5s;
-  }
+    @media only screen and (max-width: $phone-lg) {
+        &-links {
+            display: none;
+        }
+        .open-slide {
+            display: inline-block;
+        }
+    }
+    .side-nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        opacity: 0.9;
+        overflow-x: hidden;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
 }
 
 #close-cross {
-  display: none;
-  font-size: 40px;
-  color: #000;
-  text-decoration: none;
+    display: none;
+    font-size: 40px;
+    color: #000;
+    text-decoration: none;
 }
 
 .__sidebar-links {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  li {
-    padding: 10px;
-    a {
-      color: $color-accent;
-      font-size: 2em;
-      font-weight: bold;
-      text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    li {
+        padding: 10px;
+        a {
+            color: $color-accent;
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+        }
     }
-  }
 }
 
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
