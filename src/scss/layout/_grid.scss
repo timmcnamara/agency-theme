@@ -1,14 +1,10 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 30px;
     &--flex-row-wrap {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
-}
-
-// fix position of body when mobile sidebar open
-.fixedPosition {
-    position: fixed;
 }

@@ -293,6 +293,9 @@ p {
     width: 100%; }
   .service__container {
     padding: 15px; }
+    @media only screen and (max-width: 768px) {
+      .service__container {
+        padding: 15px 0; } }
   .service .bar {
     width: 0;
     height: 10px;
@@ -301,6 +304,9 @@ p {
     bottom: 0;
     background-color: #01c687;
     transition: 0.3s all ease; }
+  @media only screen and (max-width: 768px) {
+    .service {
+      max-width: 100%; } }
 
 .section__container-two-col {
   display: flex;
@@ -476,7 +482,7 @@ p {
     margin: 0; }
 
 .__services {
-  padding-top: 110px; }
+  padding: 110px 30px 0 30px; }
 
 .__navbar {
   background-color: #defcf5;
@@ -557,14 +563,12 @@ footer {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 30px; }
   .container--flex-row-wrap {
     display: flex;
     flex-flow: row wrap;
     justify-content: center; }
-
-.fixedPosition {
-  position: fixed; }
 
 .__hero {
   background-image: url(../../assets/banner-bg.png);
@@ -580,7 +584,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 100px; }
+    padding-bottom: 140px; }
     .__hero .__hero-items .img-wrap {
       width: 100%;
       padding: 0 30px;
@@ -598,3 +602,7 @@ footer {
   @media only screen and (max-width: 650px) {
     .__hero .__hero-items {
       flex-direction: column; } }
+
+@media only screen and (max-width: 650px) {
+  .__about {
+    padding: 0 30px; } }
