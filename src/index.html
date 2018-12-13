@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Agency Theme</title>
+    <script src="./js/main.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -22,7 +23,7 @@
     <nav class="__navbar">
       <div class="__navbar-container">
         <img src="assets/logo.png" alt="" />
-        <ul class="__navbar-links --collapse">
+        <ul class="__navbar-links">
           <li class="__navbar-item">Home</li>
           <li class="__navbar-item">Services</li>
           <li class="__navbar-item">About</li>
@@ -42,19 +43,17 @@
 
         <div id="side-menu" class="side-nav">
           <ul class="__sidebar-links">
-             <li class="__sidebar-link"><a href="#">home</a></li> 
-             <li class="__sidebar-link"><a href="#">about</a></li>
-             <li class="__sidebar-link"><a href="#">services</a></li>  
-             <li class="__sidebar-link"><a href="#">contact</a></li>
+            <li class="__sidebar-link"><a href="#">home</a></li>
+            <li class="__sidebar-link"><a href="#">about</a></li>
+            <li class="__sidebar-link"><a href="#">services</a></li>
+            <li class="__sidebar-link"><a href="#">contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <section class="__hero">
-      <div class="container __hero-items">    
-        <div class="img-wrap">
-            <img src="assets/banner.png" alt="" />
-        </div> 
+      <div class="container __hero-items">
+        <div class="img-wrap"><img src="assets/banner.png" alt="" /></div>
         <div class="content-wrap">
           <h1>A good designer must rely on experience</h1>
           <p>
@@ -65,7 +64,6 @@
           <div><a href="#" class="btn btn--primary">Subscribe</a></div>
         </div>
       </div>
-      
     </section>
     <!-- SERVICES -->
     <section class="__services">
@@ -78,8 +76,8 @@
           </p>
         </div>
 
-        <div class="container--flex-row-wrap">
-          <div class="service__container">
+        <div class="__service-list">
+          <div class="service-container">
             <div class="service">
               <img src="assets/service1.png" />
               <h3 class="headline-sm">Software Design</h3>
@@ -90,7 +88,7 @@
               <span class="bar"></span>
             </div>
           </div>
-          <div class="service__container">
+          <div class="service-container">
             <div class="service">
               <img src="assets/service1.png" />
               <h3 class="headline-sm">Software Design</h3>
@@ -101,7 +99,7 @@
               <span class="bar"></span>
             </div>
           </div>
-          <div class="service__container">
+          <div class="service-container">
             <div class="service">
               <img src="assets/service1.png" />
               <h3 class="headline-sm">Software Design</h3>
@@ -112,7 +110,7 @@
               <span class="bar"></span>
             </div>
           </div>
-          <div class="service__container">
+          <div class="service-container">
             <div class="service">
               <img src="assets/service1.png" />
               <h3 class="headline-sm">Software Design</h3>
@@ -123,7 +121,7 @@
               <span class="bar"></span>
             </div>
           </div>
-          <div class="service__container">
+          <div class="service-container">
             <div class="service">
               <img src="assets/service1.png" />
               <h3 class="headline-sm">Software Design</h3>
@@ -134,7 +132,7 @@
               <span class="bar"></span>
             </div>
           </div>
-          <div class="service__container">
+          <div class="service-container">
             <div class="service">
               <img src="assets/service1.png" />
               <h3 class="headline-sm">Software Design</h3>
@@ -171,99 +169,92 @@
         </div>
       </div>
     </section>
-    <section class="--accent-background --p-t-110">
+    <section class="__features">
       <div class="container section__container-two-col">
-        <div class="col-2">
+        <div class="col-2 reorder-img">
           <img alt="about image" src="assets/about-2.png" />
         </div>
-        <div class="col-2">
-          <h2 class="headline-md --p-b-16">
+        <div class="col-2 reorder-text">
+          <h2 class="headline-md">
             Any product that needs a manual to work is broken.
           </h2>
-          <p class="--p-t-24">
+          <p>
             Design is the fundamental soul of a man-made creation that ends up
             expressing itself in successive outer layers of the product or
             service. The iMac is not just the color or translucence or the
             shape.
           </p>
-          <p class="--p-t-24">
+          <p>
             To design is much more than simply to assemble, to order, or even to
             edit: it is to add value and meaning, to illuminate, to simplify, to
             clarifyto modify, to dignify, to dramatize, to persuade.
           </p>
         </div>
       </div>
-    </section>
-    <section class="--accent-background --p-b-110">
+
       <div class="container section__container-two-col">
         <div class="col-2">
-          <h2 class="headline-md --p-b-16">
-            Software Will Help You To Get More Profit
-          </h2>
-          <p class="--p-t-24">
+          <h2 class="headline-md">Software Will Help You To Get More Profit</h2>
+          <p>
             Design is the fundamental soul of a man-made creation that ends up
             expressing itself in successive outer layers of the product or
             service. The iMac is not just the color or translucence or the
             shape.
           </p>
-          <p class="--p-t-24">
+          <p>
             To design is much more than simply to assemble, to order, or even to
             edit: it is to add value and meaning, to illuminate, to simplify, to
             clarifyto modify, to dignify, to dramatize, to persuade.
           </p>
         </div>
-        <div class="col-2">
+        <div class="col-2 reorder-img">
           <img alt="about image" src="assets/about-3.png" />
         </div>
       </div>
     </section>
-    <section class="--p-b-110 --p-t-110">
-      <div class="container section__container-two-col">
-        <div class="col-2">
-          <img alt="about image" src="assets/what-for.png" />
-        </div>
-        <div class="col-2">
-          <h2 class="headline-md --p-b-16">
-            Software Will Help You To Get More Profit
-          </h2>
-          <p class="--p-t-24">
-            Design is the fundamental soul of a man-made creation that ends up
-            expressing itself in successive outer layers of the product or
-            service. The iMac is not just the color or translucence or the
-            shape.
-          </p>
-          <p class="--p-t-24">
-            To design is much more than simply to assemble, to order, or even to
-            edit: it is to add value and meaning, to illuminate, to simplify, to
-            clarifyto modify, to dignify, to dramatize, to persuade.
-          </p>
-        </div>
+
+    <div class="container section__container-two-col">
+      <div class="col-2">
+        <img alt="about image" src="assets/what-for.png" />
       </div>
-    </section>
+      <div class="col-2">
+        <h2 class="headline-md">Software Will Help You To Get More Profit</h2>
+        <p>
+          Design is the fundamental soul of a man-made creation that ends up
+          expressing itself in successive outer layers of the product or
+          service. The iMac is not just the color or translucence or the shape.
+        </p>
+        <p>
+          To design is much more than simply to assemble, to order, or even to
+          edit: it is to add value and meaning, to illuminate, to simplify, to
+          clarifyto modify, to dignify, to dramatize, to persuade.
+        </p>
+      </div>
+    </div>
     <section class="__how-we-work --visual-background">
       <div class="container">
         <h2 class="headline-md">How We Work</h2>
         <div class="section__container-three-col">
           <div class="col-3 __item">
             <h3 class="headline-sm --border-circle">1</h3>
-            <h3 class="headline-sm --p-t-24">Sketching</h3>
-            <p class="--p-t-24">
+            <h3 class="headline-sm">Sketching</h3>
+            <p>
               Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
               quasi architecto beatae vitae dicta sunt explicabo.
             </p>
           </div>
           <div class="col-3 __item">
             <h3 class="headline-sm --border-circle">2</h3>
-            <h3 class="headline-sm --p-t-24">Visualizing</h3>
-            <p class="--p-t-24">
+            <h3 class="headline-sm">Visualizing</h3>
+            <p>
               Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
               quasi architecto beatae vitae dicta sunt explicabo.
             </p>
           </div>
           <div class="col-3 __item">
             <h3 class="headline-sm --border-circle">3</h3>
-            <h3 class="headline-sm --p-t-24">Finishing</h3>
-            <p class="--p-t-24">
+            <h3 class="headline-sm">Finishing</h3>
+            <p>
               Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
               quasi architecto beatae vitae dicta sunt explicabo.
             </p>
@@ -504,22 +495,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      function openSlideMenu() {
-        var rect = document.body.getBoundingClientRect();
-        console.log(rect.y)
-        document.getElementById("side-menu").style.width = "250px";
-        document.getElementById("close-cross").style.display = "inline-block";
-        document.getElementById("hamburger").style.display = "none";
-        document.body.style.overflow = "hidden";
-      }
-
-      function closeSlideMenu() {
-        document.getElementById("side-menu").style.width = "0";
-        document.getElementById("close-cross").style.display = "none";
-        document.getElementById("hamburger").style.display = "inline-block";
-        document.body.style.overflow = "visible";
-      }
-    </script>
   </body>
 </html>

@@ -1,0 +1,17 @@
+.__features {
+    background: $color-bg;
+    .section__container-two-col:first-child {
+        padding: 60px 30px 30px 30px;
+        @media only screen and (max-width: 700px) {
+            .reorder-img {
+                order: 2;
+            }
+            .reorder-text {
+                order: 1;
+            }
+        }
+    }
+    .section__container-two-col:last-child {
+        padding: 30px 30px 60px 30px;
+    }
+}
