@@ -294,42 +294,6 @@ p {
   .__section-headline :first-child {
     padding-bottom: 24px; }
 
-.__testimonials {
-  background-color: #defcf5;
-  text-align: center;
-  padding: 110px 0; }
-  .__testimonials .__testimonial-box {
-    background-color: #c7ece3;
-    transition: 0.3s all ease;
-    position: relative;
-    z-index: 1;
-    padding: 20px 26px; }
-    .__testimonials .__testimonial-box .__testimonial-text {
-      padding-bottom: 16px;
-      text-align: left; }
-    .__testimonials .__testimonial-box:hover {
-      box-shadow: 0 0 11px 2px rgba(0, 0, 0, 0.3); }
-    .__testimonials .__testimonial-box i {
-      position: absolute;
-      left: 26px;
-      top: 20px;
-      color: #defcf5;
-      font-size: 4rem;
-      z-index: -1; }
-    .__testimonials .__testimonial-box__profile {
-      display: flex; }
-      .__testimonials .__testimonial-box__profile img {
-        background-color: #ffe8c4;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px; }
-      .__testimonials .__testimonial-box__profile .__profile-description {
-        padding-left: 10px; }
-        .__testimonials .__testimonial-box__profile .__profile-description p:first-child {
-          font-weight: 700; }
-        .__testimonials .__testimonial-box__profile .__profile-description p:last-child {
-          text-align: left; }
-
 .__meet-the-team {
   padding: 110px 0; }
   .__meet-the-team .col-4 {
@@ -631,3 +595,51 @@ footer {
   @media only screen and (max-width: 700px) {
     .__how-we-work {
       padding: 60px 0; } }
+
+.__testimonials {
+  background-color: #defcf5;
+  text-align: center;
+  padding: 60px 0; }
+  .__testimonials h2 {
+    padding-bottom: 10px; }
+  .__testimonials .__testimonial-box {
+    background-color: #c7ece3;
+    transition: 0.3s all ease;
+    position: relative;
+    z-index: 1;
+    padding: 20px 26px;
+    margin: 0 10px; }
+    @media screen and (max-width: 700px) {
+      .__testimonials .__testimonial-box {
+        margin: 10px 0; } }
+    .__testimonials .__testimonial-box .__testimonial-text {
+      padding-bottom: 16px;
+      text-align: left; }
+    .__testimonials .__testimonial-box:hover {
+      box-shadow: 0 0 11px 2px rgba(0, 0, 0, 0.3); }
+    .__testimonials .__testimonial-box i {
+      position: absolute;
+      left: 26px;
+      top: 20px;
+      color: #defcf5;
+      font-size: 4rem;
+      z-index: -1; }
+    .__testimonials .__testimonial-box__profile {
+      display: flex; }
+      .__testimonials .__testimonial-box__profile img {
+        background-color: #ffe8c4;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px; }
+      .__testimonials .__testimonial-box__profile .__profile-description {
+        padding-left: 10px; }
+        .__testimonials .__testimonial-box__profile .__profile-description p:first-child {
+          font-weight: 700; }
+        .__testimonials .__testimonial-box__profile .__profile-description p:last-child {
+          text-align: left; }
+  .__testimonials .__testimonial-boxes {
+    display: flex;
+    flex-direction: row; }
+    @media screen and (max-width: 700px) {
+      .__testimonials .__testimonial-boxes {
+        flex-direction: column; } }

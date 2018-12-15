@@ -39,52 +39,6 @@
     }
 }
 
-.__testimonials {
-    background-color: $color-bg;
-    text-align: center;
-    padding: 110px 0;
-    .__testimonial-box {
-        background-color: $color-bg-dark;
-        transition: 0.3s all ease;
-        position: relative;
-        z-index: 1;
-        padding: 20px 26px;
-        .__testimonial-text {
-            padding-bottom: 16px;
-            text-align: left;
-        }
-        &:hover {
-            box-shadow: $box-shadow;
-        }
-        i {
-            position: absolute;
-            left: 26px;
-            top: 20px;
-            color: $color-bg;
-            font-size: 4rem;
-            z-index: -1;
-        }
-        &__profile {
-            display: flex;
-            img {
-                background-color: #ffe8c4;
-                border-radius: 50%;
-                width: 60px;
-                height: 60px;
-            }
-            .__profile-description {
-                padding-left: 10px;
-                p:first-child {
-                    font-weight: $bold;
-                }
-                p:last-child {
-                    text-align: left;
-                }
-            }
-        }
-    }
-}
-
 .__meet-the-team {
     padding: 110px 0;
     .col-4 {
