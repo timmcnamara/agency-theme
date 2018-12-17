@@ -1,0 +1,29 @@
+.__blog {
+    padding: 60px 0;
+    .__blog-items {
+        display: flex;
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+        }
+        .__blog-item {
+            flex: 1;
+            padding: 0 10px;
+            @media screen and (max-width: $tablet) {
+                padding: 40px;
+            }
+            @media screen and (max-width: $phone) {
+                padding: 20px;
+            }
+            img {
+                width: 100%;
+            }
+            .__blog-text {
+                padding: 20px 20px 0 0;
+                p {
+                    padding-top: 10px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}

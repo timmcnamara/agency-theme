@@ -1,0 +1,15 @@
+.__meet-the-team {
+    padding: 60px 0;
+    .__team-members {
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .__team-member {
+            margin: auto;
+            padding-bottom: 30px;
+        }
+    }
+}

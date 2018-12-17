@@ -7,9 +7,15 @@ footer {
         max-width: $widescreen;
         width: 100%;
         margin: 0 auto;
+        @media screen and (max-width: $phone-lg) {
+            flex-direction: column;
+        }
     }
     & .__copyright {
         padding-left: 15px;
+        @media screen and (max-width: $phone-lg) {
+            padding-bottom: 20px;
+        }
     }
     & .__social {
         font-size: 36px;
